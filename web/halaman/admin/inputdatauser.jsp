@@ -5,17 +5,18 @@
 --%>
 
 
-    <%@page import="java.util.List"%>
-    <%@page import="function.user,function.fuser"%>
-    
-    <% 
-        
-        String sel = request.getParameter("lvl");
-        if(sel==null) sel="";
-        List<fuser> list = user.getAllRecords();
-        String id = user.idGenerator(list, sel);
-        
-    %>
+<%@page import="java.util.List"%>
+<%@page import="function.user,function.fuser"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<% 
+
+    String sel = request.getParameter("lvl");
+    if(sel==null) sel="";
+    List<fuser> list = user.getAllRecords();
+    String id = user.idGenerator(list, sel);
+
+%>
     
 
 

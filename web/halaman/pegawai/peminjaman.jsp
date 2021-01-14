@@ -4,14 +4,14 @@
     Author     : Raynold Panji 
 --%>
 
-        <title>DATA PEMINJAMAN</title>
+<title>DATA PEMINJAMAN</title>
 
-        <%@page import="function.*,java.util.*"%>
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-        <%
-            List<fpinjam> list = pinjam.getAllRecords();
-            request.setAttribute("list", list);
-        %>
+<%@page import="function.*,java.util.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+    List<fpinjam> list = pinjam.getAllRecords();
+    request.setAttribute("list", list);
+%>
 
         
 <c:choose>

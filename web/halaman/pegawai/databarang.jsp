@@ -5,14 +5,14 @@
 --%>
 
 
-        <title>DATA BARANG</title>       
+<title>DATA BARANG</title>       
 
-        <%@page import="function.*,java.util.*"%>
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-        <%
-            List<fbarang> list = barang.getAllRecords();
-            request.setAttribute("list", list);
-        %>
+<%@page import="function.*,java.util.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+    List<fbarang> list = barang.getAllRecords();
+    request.setAttribute("list", list);
+%>
         
         
 <c:choose>

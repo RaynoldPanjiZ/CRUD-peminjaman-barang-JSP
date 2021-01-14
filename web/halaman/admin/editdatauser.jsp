@@ -6,6 +6,7 @@
 
 <title>Edit User</title>
 <%@page import="function.user,function.fuser"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
     String id = request.getParameter("id_user");
     fuser u = user.getRecordById(id);

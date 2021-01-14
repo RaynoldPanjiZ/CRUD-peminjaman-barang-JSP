@@ -6,6 +6,7 @@
 <title>INPUT BARANG</title>
 
 <%@page import="function.barang,function.fbarang"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <% int id = barang.idGenerator(); %>
               
 

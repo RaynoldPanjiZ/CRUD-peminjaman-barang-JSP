@@ -6,6 +6,7 @@
 
 <title>Edit Barang</title>
 <%@page import="function.barang,function.fbarang"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
     String id = request.getParameter("id_barang");
     fbarang u = barang.getRecordById(id);
